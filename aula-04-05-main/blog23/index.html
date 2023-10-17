@@ -3,19 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <title>Blog 2023 - 3000 talentos ti</title>
-        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">        
-        <body>
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">   
+    </head>
+    <body>
         <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">blog</a></li>
+                    <li><a href="about.html">sobre</a></li>
+                </ul>
+            </nav>
             <h1>Blog 2023</h1>
         </header>
         <main>
             <section>
-                <header>
-                    <h2>Listagem de Artigos</h2>
-                </header>
+                <header><h2>Listagem de Artigos</h2></header>
                 <article>
                     <aside>
-                        <img src="img/icone-estrela.png" />
+                        <img src="https://picsum.photos/200/170" style="display: flex;" />
                     </aside>
                     <header>
                         <h3>Primeiro post</h3>
@@ -25,16 +30,18 @@
                         <details>
                             <summary>veja um resumo...</summary>
                             <p>
-                                Este é o super conteúdo do primeiro post
-                                do blog. 
+                                Este é o super conteúdo do primeiro post do blog. 
                             </p>
                         </details>
                     </header>
                     <p>
-                        <a href="posts/20230314-primeiro-post.html">vá para o artigo</a>
+                        <a href="./posts/20231017-primeiro-post.html">vá para o artigo</a>
                     </p>
                 </article>
                 <article>
+                    <aside>
+                        <img src="https://picsum.photos/200/170?blur" style="display: flex;" />
+                    </aside>
                     <header>
                         <h3>Segundo post</h3>
                         <time datetime="2023-10-17 19:00">
@@ -43,13 +50,32 @@
                         <details>
                             <summary>veja um resumo...</summary>
                             <p>
-                                Este é o super conteúdo do primeiro post
-                                do blog. 
+                                Este é o super conteúdo do segundo post do blog. 
                             </p>
                         </details>
                     </header>
                     <p>
-                        <a href="posts/20230314-primeiro-post.html">vá para o artigo</a>
+                        <a href="./posts/20231017-segundo-post.html">vá para o artigo</a>
+                    </p>
+                </article>
+                <article>
+                    <aside>
+                        <img src="https://picsum.photos/seed/picsum/200/170" style="display: flex;" />
+                    </aside>
+                    <header>
+                        <h3>Rascunho post para amanhã</h3>
+                        <time datetime="2023-10-18 19:00">
+                            18 de outubro de 2023
+                        </time>
+                        <details>
+                            <summary>veja um resumo...</summary>
+                            <p>
+                                Este é o super conteúdo do primeiro post de amanhã do blog. 
+                            </p>
+                        </details>
+                    </header>
+                    <p>
+                        <a href="./posts/20231018-rascunho-para-amanha.html">vá para o artigo</a>
                     </p>
                 </article>
             </section>
@@ -61,8 +87,14 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quis rem voluptatem iure doloribus harum est ea quo sit, iusto nulla corporis aspernatur deserunt quas suscipit deleniti maiores reiciendis quod.
                     </p>
+                    <p>
+                        Clique aqui..
+                    </p>
                 </article>
             </section>
         </main>
+        <footer>
+            @Blog 23 - <a href="LICENSE">Licença</a>
+        </footer>        
     </body>
 </html>
