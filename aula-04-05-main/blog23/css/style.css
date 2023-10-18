@@ -1,0 +1,29 @@
+.fundadores figure {
+    margin-left: 7%;
+    max-width: 40%;
+    display: inline-block;
+    text-align: center;
+}
+.titulo-post {
+    text-align: left;
+}
+figure {
+    max-width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+img {
+    margin-top: 10x;
+}
+p {
+    padding: 0 5% 0 5%;
+    text-align: justify;
+}
+figurecaption {
+    margin: auto;
+}
