@@ -1,29 +1,50 @@
 .fundadores figure {
     margin-left: 7%;
     max-width: 40%;
+    max-height: 40%;
     display: inline-block;
     text-align: center;
 }
 .titulo-post {
     text-align: left;
 }
-figure {
-    max-width: 70%;
-    margin-left: 15%;
+
+#titulo-blog {
+    margin: 25px auto 5px auto;
     text-align: center;
 }
+
+header {
+    color: gainsboro;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+
 h1,
 h2,
 h3 {
     text-align: center;
 }
+
+figure {
+    max-width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    margin: auto;
+    border: 2px solid rgb(190, 190, 190);
+    border-radius: 15px;
+}
+
+strong {
+    font-size: 100%;
+    color: cornsilk;
+}
+
 img {
     margin-top: 10x;
 }
+
 p {
     padding: 0 5% 0 5%;
     text-align: justify;
-}
-figurecaption {
-    margin: auto;
 }
