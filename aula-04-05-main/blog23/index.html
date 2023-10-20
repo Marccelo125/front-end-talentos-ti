@@ -3,25 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <title>Blog 2023 - 3000 talentos ti</title>
-        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> 
         <link rel="stylesheet" href="./css/style.css">  
     </head>
     <body>
         <header>
             <h1 id="titulo-blog">Blog 2023</h1>
             <nav>
-                <ul>
-                    <li><a href="./index.html">blog</a></li>
-                    <li><a href="./about.html">sobre</a></li>
+                <ul class="lista-navbar">
+                    <li class="botao-home"><a href="./index.html">Home</a></li>
+                    <li class="botao-sobre"><a href="./about.html">Sobre</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section>
                 <header><h2>Listagem de Artigos</h2></header>
+            </section>
+            <section class="posts">
                 <article>
                     <aside>
-                        <img src="https://picsum.photos/200/170" style="display: flex;" />
+                        <img src="https://picsum.photos/270/170" style="display: flex;" />
                     </aside>
                     <header>
                         <h3 class="titulo-post">Primeiro post</h3>
@@ -35,13 +36,13 @@
                             </p>
                         </details>
                     </header>
-                    <p>
-                        <a href="./posts/20231017-primeiro-post.html">vá para o artigo</a>
+                    <p class="botao-artigo">
+                        <a href="./posts/20231017-primeiro-post.html">Ver artigo Completo</a>
                     </p>
                 </article>
                 <article>
                     <aside>
-                        <img src="https://picsum.photos/200/170?blur" style="display: flex;" />
+                        <img src="https://picsum.photos/270/170?blur" style="display: flex;" />
                     </aside>
                     <header>
                         <h3 class="titulo-post">Segundo post</h3>
@@ -55,13 +56,13 @@
                             </p>
                         </details>
                     </header>
-                    <p>
-                        <a href="./posts/20231017-segundo-post.html">vá para o artigo</a>
+                    <p class="botao-artigo">
+                        <a href="./posts/20231017-segundo-post.html">Ver artigo completo</a>
                     </p>
                 </article>
                 <article>
                     <aside>
-                        <img src="https://picsum.photos/seed/picsum/200/170" style="display: flex;" />
+                        <img src="https://picsum.photos/seed/picsum/270/170" style="display: flex;" />
                     </aside>
                     <header>
                         <h3 class="titulo-post">Rascunho post para amanhã</h3>
@@ -75,13 +76,13 @@
                             </p>
                         </details>
                     </header>
-                    <p>
-                        <a href="./posts/20231018-rascunho-para-amanha.html">vá para o artigo</a>
+                    <p class="botao-artigo">
+                        <a href="./posts/20231018-rascunho-para-amanha.html">Ver artigo completo</a>
                     </p>
                 </article>
                 <article>
                     <aside>
-                        <img src="https://picsum.photos/200/170/?blur=2" style="display: flex;" />
+                        <img src="https://picsum.photos/270/170/?blur=2" style="display: flex;" />
                     </aside>
                     <header>
                         <h3 class="titulo-post">Tarefa 02</h3>
@@ -98,12 +99,12 @@
                             </p>
                         </details>
                     </header>
-                    <p>
-                        <a href="./posts/20231018-tarefa02.html">vá para o artigo</a>
+                    <p class="botao-artigo">
+                        <a href="./posts/20231018-tarefa02.html">Ver artigo Completo</a>
                     </p>
                 </article>
             </section>
-            <section>
+            <section class="fale-conosco">
                 <header>
                     <h2>Fale Conosco</h2>
                 </header>
@@ -111,14 +112,16 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quis rem voluptatem iure doloribus harum est ea quo sit, iusto nulla corporis aspernatur deserunt quas suscipit deleniti maiores reiciendis quod.
                     </p>
-                    <p>
+                    <p id="botao-clique-aqui">
                         Clique aqui..
                     </p>
                 </article>
             </section>
         </main>
         <footer>
-            @Blog 23 - <a href="LICENSE" target="_blank">Licença</a> <a href="https://codeberg.org/grz/front23n/src/branch/main/proj1-Site-tipo-blog.md" target="_blank">Material Base</a>
+            @Blog 23 - 
+            <a href="LICENSE" target="_blank">Licença
+            </a> <a href="https://codeberg.org/grz/front23n/src/branch/main/proj1-Site-tipo-blog.md" target="_blank">Material Base</a>
         </footer>        
     </body>
 </html>
