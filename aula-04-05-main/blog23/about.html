@@ -3,22 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>Sobre...</title>
-        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">   
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/about.css">
+        <link rel="stylesheet" href="./css/index.css">
     </head>
     <body>
         <header>
-            <h1 id="titulo-blog">Blog 2023</h1>
+            <h1 class="titulo-blog">Blog 2023</h1>
             <nav>
-                <ul>
-                    <li><a href="./index.html">blog</a></li>
-                    <li><a href="./about.html">sobre</a></li>
+                <ul class="lista-navbar">
+                    <li class="botao-home"><a href="./index.html">Home</a></li>
+                    <li class="botao-sobre"><a href="./about.html">Sobre</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section>
-                <article>
+                <article class="sobre-o-blog">
                     <header>
                         <h2>Sobre o blog</h2>
                     </header>
@@ -31,12 +31,21 @@
                             </time>
                         </figurecaption>
                     </figure>
+                </article>
+                <article class="um-pouco-info">
                     <header>
                         <h3>Um pouco sobre o nosso blog</h3>
                     </header>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem asperiores enim sunt ab reprehenderit eaque distinctio repudiandae numquam molestiae perspiciatis, deserunt voluptates, ducimus quibusdam provident cum officiis dolores, est sapiente.
-                    </p>
+                    <article class="texto-pouco-info">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem asperiores enim sunt ab reprehenderit eaque distinctio repudiandae numquam molestiae perspiciatis, deserunt voluptates, ducimus quibusdam provident cum officiis dolores, est sapiente.
+                        </p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>consectetur adipisicing elit.</li>
+                            <li>Deserunt magnam id nesciunt, alias sequi in quis corporis.</li>
+                        </ul>
+                    </article>
                 </article>
                 <article class="fundadores">
                     <header>
@@ -72,7 +81,7 @@
                     </figure>
                 </article>
             </section>
-            <section>
+            <section class="fale-conosco">
                 <header>
                     <h2>Fale Conosco</h2>
                 </header>
@@ -80,14 +89,16 @@
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quis rem voluptatem iure doloribus harum est ea quo sit, iusto nulla corporis aspernatur deserunt quas suscipit deleniti maiores reiciendis quod.
                     </p>
-                    <p>
+                    <p id="botao-clique-aqui">
                         Clique aqui..
                     </p>
                 </article>
             </section>
         </main>
         <footer>
-            @Blog 23 - <a href="LICENSE" target="_blank">Licença</a> <a href="https://codeberg.org/grz/front23n/src/branch/main/proj1-Site-tipo-blog.md" target="_blank">Material Base</a>
-        </footer>  
+            @Blog 23 - 
+            <a href="LICENSE" target="_blank">Licença
+            </a> <a href="https://codeberg.org/grz/front23n/src/branch/main/proj1-Site-tipo-blog.md" target="_blank">Material Base</a>
+        </footer> 
     </body>
 </html>

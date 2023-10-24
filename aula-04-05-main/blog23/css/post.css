@@ -1,0 +1,24 @@
+.titulo h2{
+    font-size: 200%;
+    color: teal;
+    margin-top: 20px;
+}
+
+.titulo {
+    margin: auto;
+    text-align: center;
+}
+
+.imagem img{
+    margin: auto;
+    border: 2px teal solid;
+}
+
+.conteudo {
+    text-align: justify;
+    font-size: medium;
+    margin: 50px;
+    margin-top: 20px;
+    border: 2px teal solid;
+    padding: 15px;
+}

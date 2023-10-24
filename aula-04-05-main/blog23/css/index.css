@@ -37,26 +37,19 @@ body {
     background-color: rgb(250, 250, 250);
 }
 
-.fundadores figure {
-    margin-left: 7%;
-    max-width: 40%;
-    max-height: 40%;
-    display: inline-block;
-    text-align: center;
+header {
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
 }
+
 .titulo-post {
     text-align: left;
     font-size: larger;
 }
 
-#titulo-blog {
+.titulo-blog {
     text-align: center;
-}
-
-header {
-    color: rgb(0, 0, 0);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: justify;
 }
 
 h1,
@@ -71,11 +64,13 @@ main {
 .posts {
     display: inline-flex;
     text-align: center;
+    margin-top: 20px;
+    max-width: 150vh;
 }
 
 .posts article {
     padding: 15px;
-    margin-right: 10px;;
+    margin-right: 10px;
     background-color: rgba(226, 226, 226, 0.555);
     border: 2px rgb(228, 228, 228) solid;
     border-radius: 20px;
@@ -88,6 +83,9 @@ main {
 
 .botao-artigo a {
     display: inline-flex;
+    min-width: 10vh;
+    max-width: 35vh;
+
     color: whitesmoke;
     padding: 10px 65px 10px 65px;
     border: 1px teal;
@@ -101,16 +99,6 @@ main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.fale-conosco {
-    margin-top: 20px;
-}
-
-.fale-conosco article {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-    margin: 10px 28% 10px 28%;
-    text-align: justify;
-}
 
 #botao-clique-aqui {
     margin-top: 10px;
@@ -120,7 +108,6 @@ main {
     border: 1px teal;
     border-radius: 5px;
     background-color: teal;
-
 }
 
 figure {
@@ -134,7 +121,8 @@ figure {
 
 strong {
     font-size: 100%;
-    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: teal;
 }
 
 img {
@@ -142,12 +130,24 @@ img {
 }
 
 footer {
-    margin-top: 38vh;
+    margin-top: 19vh;
     text-align: center;
     color: aliceblue;
     background-color: rgb(18, 161, 161);
     padding: 15px 0 15px 0;
     font-family: 'Segoe', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.fale-conosco {
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+.fale-conosco article {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    margin: 10px 28% 10px 28%;
+    text-align: justify;
 }
 
 footer a {
