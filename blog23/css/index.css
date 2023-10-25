@@ -24,13 +24,7 @@ nav {
 }
 
 .botao-home {
-    text-align: center;
     padding-right: 25px;
-}
-
-.botao-sobre {
-    text-align: center;
-    padding-right: 35px;
 }
 
 body {
@@ -48,8 +42,12 @@ header {
     font-size: larger;
 }
 
-.titulo-blog {
+.titulo-blog h1 {
+    display: flex;
+    margin: 20px;
+    padding: 0px;
     text-align: center;
+    justify-content: space-evenly;
 }
 
 h1,
@@ -66,6 +64,9 @@ main {
     text-align: center;
     margin-top: 20px;
     max-width: 150vh;
+
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .posts article {
