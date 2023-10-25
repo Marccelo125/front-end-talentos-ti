@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 09 - 3000 Talentos TI</title>
+    <style>
+      composicao {
+        display: flex; /*  método de display dos itens dentro desse espaço */
+        flex-wrap: wrap; /*  adapta para os itens não saírem da pag */
+        flex-direction: row; /*  direção da orieitação da pag */
+
+        align-items: center;
+        justify-content: space-evenly; /*  Justifica de varias formas os itens, não só texto */
+
+        background-color: blueviolet;
+        color: aliceblue;
+        padding: 10px;
+    }
+      quadrado {
+          width: 100px;
+        height: 100px;
+
+        order: 0; /* Define a ordem, sem se basear na ordem das tags */
+        background-color: aqua;
+    }
+    circulo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: magenta;
+      }
+      footer a {
+        font-size: large;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <composicao>
+      <quadrado></quadrado>
+      <circulo></circulo>
+      <quadrado></quadrado>
+      <circulo></circulo>
+      <composicao style="background-color: black;">
+            <circulo></circulo>
+            <quadrado></quadrado>
+            <circulo></circulo>
+        </composicao>
+      <quadrado></quadrado>
+      <circulo></circulo>
+      <quadrado></quadrado>
+      <circulo></circulo>
+      <quadrado></quadrado>
+      <circulo></circulo>
+    </composicao>
+    <footer>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/flexbox"
+        >Documentação de Referência</a
+      >
+    </footer>
+  </body>
+</html>
