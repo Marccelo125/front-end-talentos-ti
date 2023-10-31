@@ -27,10 +27,11 @@ Palavra:
 
     // 3. Quando ocorrer o evento 'click', o EventHandler vai 'ouvir' e vai 'tratar' esse evento - isso quer dizer: vai executar algum código. 
     // O EventHandler é gerarRobo(): que é a função que será executada em resposta ao evento 'click' do botão
-    
+
     function gerarRobo() {
+        let txRobo = document.querySelector('input');
         let imgRobo = document.querySelector('img');
-        imgRobo.src="https://robohash.org/"+Math.random();
+        imgRobo.src=`https://robohash.org/${txRobo}`;
     }
 </script>
 </html>
