@@ -23,17 +23,19 @@
      - color
 
      Note que o estilo está em outra propriedade do elemento, chamada style
-     */
-    titulo.innerText='Blog 2023';
+    */
+   
     titulo.style.backgroundColor='cyan';
     titulo.style.color='black';
 
-    let primeiroParagrafo = document.querySelector('p');
-    primeiroParagrafo.innerText = `Oi, oi, oi!!!`
+    let primeiroCabecalho = document.querySelector('h1');
+    primeiroCabecalho.innerText = `Oi, oi, oi!!!`
+
+    let primeiroParagrafo = document.querySelector('p');    
+    primeiroCabecalho.appendChild(subtitulo)
 
     let subtitulo = document.createElement('h2')
     subtitulo.innerText = `Subtítulo`
 
-    primeiroParagrafo.appendChild(subtitulo)
 </script>
 </html>
