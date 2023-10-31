@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando JS no HTML - Revisão</title>
+    <style>
+        p {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        for (i = 1; i <= 5; i++) {
+            // document representa a raiz da arvore do documento que esta sendo mostrado
+            const umCabecalho = document.createElement('p'); // cria um elemento, como se fosse digitar <h1></h1> (SEMPRE CRIAR NESTES CASOS)
+            umCabecalho.innerHTML = `Cabeçalho ${i} - <a href="djashdasjk">Link</a>`; // texto interno da tag (innerHtml, o browser interpreta corretamente usando as tags HTML)
+            // umCabecalho.innerText = `Cabeçalho ${i} - <a href="djashdasjk">Link</a>`; // texto interno da tag (innerText interpreta tudo como texto)
+            
+            // umCabecalho.style = 'color: blue'; // editar css do elemento
+            umCabecalho.style.color = 'red'; // editar css como propriedade do objeto
+            umCabecalho.style.display = 'inline'; // editar css como propriedade do objeto
+
+            // umCabecalho.style.background-color = 'cyan'; // não funciona por causa do 'erro de sintaxe'
+            umCabecalho.style.backgroundColor = 'yellow'; // Utilizando camelCase funciona, GG!
+
+            document.body.appendChild(umCabecalho); // Em body (document.body) acrescente como filho seu (appendChild) o elemento umCabecalho
+        }
+    </script>
+</body>
+</html>
