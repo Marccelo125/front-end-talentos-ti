@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+</head>
+<body>
+Palavra:
+<input type="text" name="txPalavra">
+<button name="btGerarRobo" >Gerar Robô</button>
+<img>
+</body>
+<script>
+    // Exemplo de tratamento de eventos de interface
+
+
+    // 1. Pegamos uma referência ao botão
+    let btGerarRobo = document.querySelector('button');
+
+    /* 2. Adicionamos um Event Listener ao botão)
+     Um Event Listener é um código (neste caso uma função) que aguarda a ocorrência de um evento (ele 'escuta' para ver se o evento vai ocorrer)
+    */
+   btGerarRobo.addEventListener('click', gerarRobo);
+
+
+
+    // 3. Quando ocorrer o evento 'click', o EventHandler vai 'ouvir' e vai 'tratar' esse evento - isso quer dizer: vai executar algum código. 
+    // O EventHandler é gerarRobo(): que é a função que será executada em resposta ao evento 'click' do botão
+    
+    function gerarRobo() {
+        let imgRobo = document.querySelector('img');
+        imgRobo.src="https://robohash.org/"+Math.random();
+    }
+</script>
+</html>
