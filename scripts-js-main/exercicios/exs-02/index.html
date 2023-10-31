@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+<body>
+    <h1>Título do site</h1>
+    <h2>subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magni nemo, quam, eum nobis animi inventore ut quia sint id itaque facilis. Maxime iure quidem praesentium similique, quasi dolorum ab?</p>    
+</body>
+<script>
+    // Consulta a árvore do documento (query) usando o seletor 'h1', que seleciona elementos h1 (são os mesmos seletores que usamos com CSS)
+    // Guarda na variável titulo uma referência para o elemento selecionado
+
+    let titulo = document.querySelector('h1');
+    
+    /* Altera valores de algumas propriedades do elemento:
+     - innerText
+     e do estilo (CSS) associado ao elemento:
+     - backgroundColor
+     - color
+
+     Note que o estilo está em outra propriedade do elemento, chamada style
+     */
+    titulo.innerText='Blog 2023';
+    titulo.style.backgroundColor='cyan';
+    titulo.style.color='black'; 
+
+    let novoParagrafo = document.createElement('p');
+    novoParagrafo.innerText = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut optio dolorem autem impedit earum in vero tenetur. Esse explicabo distinctio enim. Officiis eaque saepe voluptas, rerum veniam aliquam ipsum nulla!`;
+    novoParagrafo.style.fontSize = '13px';
+    document.body.appendChild(novoParagrafo);
+    </script>
+</html>
