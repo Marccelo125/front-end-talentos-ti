@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Cria um elemento H1 e guarda na variável cabecalho
+    let cabecalho = document.createElement('h1');
+
+    // Altera o valor da propriedade innerText (conteúdo de texto do elemento)
+    cabecalho.innerText = 'Título do Site';
+
+    // Acrescenta o elemento cabecalho (H1) abaixo/dentro do body do documento.
+    document.body.appendChild(cabecalho);
+
+    // Neste ponto o browser passa a renderizar o novo elemento - depois de ele começar a fazer parte da árvore DOM (Document Object Model).
+    let subtitulo = document.createElement('h2');
+    subtitulo.innerText = `Subtítulo`; 
+    document.body.appendChild(subtitulo);
+
+    let paragrafo = document.createElement('p');
+    paragrafo.innerText = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis voluptate asperiores dolorum quo error iste odio, reprehenderit sit animi quae, odit aliquam cupiditate repudiandae cumque voluptas nobis dignissimos a ex?`
+    document.body.appendChild(paragrafo)
+</script>
+</html>
