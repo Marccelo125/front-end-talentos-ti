@@ -6,16 +6,21 @@
     <title>Exercício 04</title>
 </head>
 <body>
-
+    <button type="button" name="bt01">Gerar Robô</button>
+    <main></main>
 </body>
 <script>
-    let imagemRobo = document.createElement('img');
-    let randomizarRobo = Math.random();
-    imagemRobo.src = `https://robohash.org/${randomizarRobo}`
-    
-    // Também funciona e é mais compacto para todo o processo, caso o math.random seja usado apenas uma vez
-    // imgRobo.src="https://robohash.org/"+Math.random(); 
+    const botao = document.querySelector('button')
+    botao.addEventListener('click', criarRobo)
 
-    document.body.appendChild(imagemRobo)
+    function criarRobo() {
+        let localAdicionar = document.querySelector('main');
+        let imagemRobo = document.createElement('img');
+        let randomizarRobo = Math.random();
+        imagemRobo.src = `https://robohash.org/${randomizarRobo}`;
+        // Também funciona e é mais compacto para todo o processo, caso o math.random seja usado apenas uma vez
+        // imgRobo.src="https://robohash.org/"+Math.random(); 
+        localAdicionar.appendChild(imagemRobo)
+    }
 </script>
 </html>
