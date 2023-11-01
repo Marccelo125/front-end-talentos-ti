@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuleiro Xadrez</title>
+    <style>
+        body {
+            background: antiquewhite;
+        }
+        linha {
+            display: flex; /*  método de display dos itens dentro desse espaço */
+            flex-flow: row wrap;
+
+            width: 400px;
+            background-color: rgb(51, 30, 30);
+            color: aliceblue;
+            padding: 25px;
+        }
+        quadradoBranco {
+            width: 50px;
+            height: 50px;
+
+            color: white;
+            background-color: aliceblue;
+        }
+        quadradoPreto {
+            width: 50px;
+            height: 50px;
+
+            color: black;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button name="btnGerarTabuleiro">Gerar Tabuleiro</button>
+    </header>
+</body>
+    <script>
+        const botao = document.querySelector('button')
+        botao.addEventListener('click', criarQuadrados)
+        
+        const padraoTabuleiro = document.createElement('linha')
+        document.body.appendChild(padraoTabuleiro)
+        
+        function criarQuadrados() {
+            const linhas = 8
+            const colunas = 8
+            let contador = 0
+
+            for (let l = 0; l < linhas; l++) {
+                for (let c = 0; c < colunas / 2; c++) {
+                    if (contador % 2 == 0) {
+                        adicionaBranca()
+                        adicionaPreta()
+                    } else {
+                        adicionaPreta()
+                        adicionaBranca()
+                    }
+                }
+                contador++
+            }
+        }
+        function adicionaBranca() {
+            const quadradoBranco = document.createElement('quadradoBranco')
+            padraoTabuleiro.appendChild(quadradoBranco)
+        }
+        function adicionaPreta() {
+            const quadradoPreto = document.createElement('quadradoPreto')
+            padraoTabuleiro.appendChild(quadradoPreto)
+        }
+        </script>
+</html>
