@@ -14,13 +14,12 @@
       .imagem {
         list-style: none;
         text-decoration: none;
-
-    }
-    img {
+      }
+      img {
         border: 5px green solid;
         border-radius: 50px;
         margin-top: 10px;
-        
+
         width: 600px;
         height: 400px;
       }
@@ -47,36 +46,40 @@
       </nav> -->
   <body>
     <script>
-        // Criando navBar
-        const cabecalho = document.createElement("header");
-        const navbar = document.createElement("nav");
-        const lista = document.createElement("ul");
-        const itemLista = document.createElement("li");
-  
-        // Montando árvore
-        document.body.appendChild(cabecalho);
-        cabecalho.appendChild(navbar);
-        navbar.appendChild(lista);
-        lista.appendChild(itemLista);
-        
-        // Outro método de randomizar imagem
-        const imagens = [
-            '<img src="https://www.eleconomista.com.mx/__export/1629558972431/sites/eleconomista/img/2018/12/03/vacas_031218.jpg_553764947.jpg"/>',
-            '<img src="https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia28614/racas-de-vaca-leiteira-taurinas-cursos-cpt.jpg"/>',
-            '<img src="https://www.otempo.com.br/image/contentid/policy:1.2536791:1630682884/Vaca-louca-jpg.jpg?f=3x2&w=1224"/>',
-            '<img src="https://opresenterural.com.br/wp-content/uploads/2021/08/Vaccinar-Vaca-tratada-sem-elementos-secund%C3%A1rios_reduz.jpg"/>',
-            '<img src="https://www.comprerural.com/wp-content/uploads/2022/02/WhatsApp-Image-2020-06-23-at-11.19.49.jpeg"/>',
-        ]
+      // Criando navBar
+      const cabecalho = document.createElement("header");
+      const navbar = document.createElement("nav");
+      const lista = document.createElement("ul");
+      const itemLista = document.createElement("li");
 
+      // Montando árvore
+      document.body.appendChild(cabecalho);
+      cabecalho.appendChild(navbar);
+      navbar.appendChild(lista);
+      lista.appendChild(itemLista);
+
+      // Outro método de randomizar imagem
+      const imagens = [
+        '<img src="https://www.eleconomista.com.mx/__export/1629558972431/sites/eleconomista/img/2018/12/03/vacas_031218.jpg_553764947.jpg"/>',
+        '<img src="https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia28614/racas-de-vaca-leiteira-taurinas-cursos-cpt.jpg"/>',
+        '<img src="https://www.otempo.com.br/image/contentid/policy:1.2536791:1630682884/Vaca-louca-jpg.jpg?f=3x2&w=1224"/>',
+        '<img src="https://opresenterural.com.br/wp-content/uploads/2021/08/Vaccinar-Vaca-tratada-sem-elementos-secund%C3%A1rios_reduz.jpg"/>',
+        '<img src="https://www.comprerural.com/wp-content/uploads/2022/02/WhatsApp-Image-2020-06-23-at-11.19.49.jpeg"/>',
+      ];
+
+      function trocarImagem() {
         // Randomizador
-        const imagemRandom = Number(parseInt(Math.random() * imagens.length))
+        const imagemRandom = Number(parseInt(Math.random() * imagens.length));
         const imagemT = imagens[imagemRandom];
-        
 
         // Inserindo imagem
-        itemLista.innerHTML = imagemT
+        itemLista.innerHTML = imagemT;
         itemLista.classList.add("imagem");
-      </script>
+      }
+
+      // colocando intervalo para a imagem mudar
+      window.setInterval(trocarImagem, 2000);
+    </script>
     <pre>
         <span id="balaoUp">_______________________</span>
        < <span id="txtCowSay">Hello, bovine world!</span> >
@@ -100,11 +103,15 @@
       "Rapadura é doce mas não é mole não",
     ];
 
-    const txtCowsay = document.querySelector("#txtCowSay"); // # por ser ID
-    const numMensagem = Number.parseInt(Math.random() * txtMensagens.length);
-
-    txtCowsay.innerText = txtMensagens[numMensagem];
-    balaoDown.innerText = "-".repeat(txtMensagens[numMensagem].length + 2);
-    balaoUp.innerText = "_".repeat(txtMensagens[numMensagem].length + 2);
+    function trocarTexto() {
+      const txtCowsay = document.querySelector("#txtCowSay"); // # por ser ID
+      const numMensagem = Number.parseInt(Math.random() * txtMensagens.length);
+  
+      txtCowsay.innerText = txtMensagens[numMensagem];
+      balaoDown.innerText = "-".repeat(txtMensagens[numMensagem].length + 2);
+      balaoUp.innerText = "_".repeat(txtMensagens[numMensagem].length + 2);
+    }
+        // colocando intervalo para o texto mudar
+        window.setInterval(trocarTexto, 2000);
   </script>
 </html>
