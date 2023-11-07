@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+      .imagem {
+        list-style: none;
+        text-decoration: none;
+
+    }
+    img {
+        border: 5px green solid;
+        border-radius: 50px;
+        margin-top: 10px;
+        
+        width: 600px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <!-- navbar bootstrap -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="https://picsum.photos/50/50" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Bem Vindo(a)<span class="sr-only">(página atual)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav> -->
+  <body>
+    <script>
+        // Criando navBar
+        const cabecalho = document.createElement("header");
+        const navbar = document.createElement("nav");
+        const lista = document.createElement("ul");
+        const itemLista = document.createElement("li");
+  
+        // Montando árvore
+        document.body.appendChild(cabecalho);
+        cabecalho.appendChild(navbar);
+        navbar.appendChild(lista);
+        lista.appendChild(itemLista);
+        
+        // Outro método de randomizar imagem
+        const imagens = [
+            '<img src="https://www.eleconomista.com.mx/__export/1629558972431/sites/eleconomista/img/2018/12/03/vacas_031218.jpg_553764947.jpg"/>',
+            '<img src="https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia28614/racas-de-vaca-leiteira-taurinas-cursos-cpt.jpg"/>',
+            '<img src="https://www.otempo.com.br/image/contentid/policy:1.2536791:1630682884/Vaca-louca-jpg.jpg?f=3x2&w=1224"/>',
+            '<img src="https://opresenterural.com.br/wp-content/uploads/2021/08/Vaccinar-Vaca-tratada-sem-elementos-secund%C3%A1rios_reduz.jpg"/>',
+            '<img src="https://www.comprerural.com/wp-content/uploads/2022/02/WhatsApp-Image-2020-06-23-at-11.19.49.jpeg"/>',
+        ]
+
+        // Randomizador
+        const imagemRandom = Number(parseInt(Math.random() * imagens.length))
+        const imagemT = imagens[imagemRandom];
+        
+
+        // Inserindo imagem
+        itemLista.innerHTML = imagemT
+        itemLista.classList.add("imagem");
+      </script>
+    <pre>
+        <span id="balaoUp">_______________________</span>
+       < <span id="txtCowSay">Hello, bovine world!</span> >
+        <span id="balaoDown">-----------------------</span>
+            \   ^__^
+             \  (oo)\_______
+                (__)\       )\/\
+                    ||----w |
+                    ||     ||
+    </pre>
+  </body>
+  <script>
+    const balaoDown = document.querySelector("#balaoDown");
+    const balaoUp = document.querySelector("#balaoUp");
+
+    const txtMensagens = [
+      "Hello, bovine world!",
+      "Um ótimo lugar para usar o alert é de dentro de seus scripts, toda vez que precisar se comunicar com o seu usuário.",
+      "Estou esperando o pasto crescer, que demora!",
+      "A vida de desenvolvedor não é dificil, quero ver você ser uma vaca",
+      "Rapadura é doce mas não é mole não",
+    ];
+
+    const txtCowsay = document.querySelector("#txtCowSay"); // # por ser ID
+    const numMensagem = Number.parseInt(Math.random() * txtMensagens.length);
+
+    txtCowsay.innerText = txtMensagens[numMensagem];
+    balaoDown.innerText = "-".repeat(txtMensagens[numMensagem].length + 2);
+    balaoUp.innerText = "_".repeat(txtMensagens[numMensagem].length + 2);
+  </script>
+</html>
