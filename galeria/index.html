@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema Galeria de imagens</title>
+    <style>
+        header {
+            text-align: center;
+            margin-top: 8%;
+        }
+        h1 {
+            font-size: 350%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        strong {
+            background-color: rgb(65, 65, 236);
+            color: white;
+            padding: 2px;
+        }
+        p {
+            font-size: 150%;
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+        ul {
+            margin: 1% 10% 10% 10%;
+            background: rgb(64, 64, 255);
+            border: 2px rgb(64, 64, 255) solid;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        li {
+            display: inline-flex;
+            text-align: center;
+            list-style: none;
+        }
+        img {
+            padding: 33px;
+            width: 300px;
+            height: 300px;
+        }
+        img:hover {
+            background-color: rgb(72, 72, 255);
+            width: 316px;
+            height: 316px;
+            border: 5px white solid;
+            border-radius: 100px;
+            padding: 18px;
+            transition: all 0.1s;
+        }
+        .btn-codigo {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(64, 64, 255);
+            padding: 10px;
+            color: white;
+            font-size: large;
+            text-align: center;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        .btn-codigo:hover {
+            font-size: large;
+            padding: 12px;
+            transition: all 0.1s;
+        }
+    </style>
+  </head>
+  <body>
+  </body>
+  <script>
+    const cabecalho = document.createElement('header')
+    const titulo = document.createElement('h1')
+    document.body.appendChild(cabecalho);
+    cabecalho.appendChild(titulo);
+
+    titulo.innerHTML = 'Seja bem-vindo á<br /> <p><strong>Galeria de Imagens</strong></p>'
+
+    const botaoA = document.createElement('a')
+    botaoA.href = 'https://github.com/Marccelo125/front-end-talentos-ti/tree/main/galeria'
+    botaoA.target = '_blank'
+    botaoA.innerText = 'Clique aqui para ver o código'
+    botaoA.classList.add('btn-codigo')
+    cabecalho.appendChild(botaoA);
+
+    const lista = document.createElement('ul');
+    document.body.appendChild(lista);
+    for (let i = 1; i <= 5; i++) {
+      const item = document.createElement('li');
+      const img = document.createElement('img');
+
+      img.src = `./images/avatar${i}.png`;
+
+      lista.appendChild(item);
+      item.appendChild(img);
+    }
+
+  </script>
+</html>
