@@ -32,8 +32,29 @@
 }
 
 .posts main {
-    color: var(--corDoTexto);
     font-size: 105%;
+    color: var(--corDoTexto);
     font-style: italic;
     margin-bottom: 2%;
+}
+
+nav {
+    background-color: var(--corTitulosPosts);
+    border: 1px var(--corTitulosPosts) solid;
+    border-radius: 10px;
+    text-align: center;
+    list-style: none;
+    margin: 0 10% 1% 10%;
+    padding: 2px;
+}
+
+.lista-navbar li {
+    font-size: 200%;
+    display: inline;
+    margin-right: 50px;
+}
+
+.lista-navbar a {
+    color: white;
+    text-decoration: none;
 }
