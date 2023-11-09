@@ -1,0 +1,39 @@
+:root {
+    --corBackground: rgb(255, 255, 255);
+    --corTitulosPosts: rgb(64, 64, 255);
+    --corDoTexto: rgb(26, 26, 26);
+}
+
+* {
+    text-align: center;
+}
+
+#listagemTitulo {
+    font-size: 200%;
+}
+
+.posts {
+    background-color: var(--corBackground);
+    border: 1px var(--corBackground) solid;
+    border-radius: 12px;
+    margin: 1% 5% 1% 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 2%;
+}
+
+.posts header {
+    background-color: var(--corTitulosPosts);
+    border: 1px var(--corTitulosPosts) solid;
+    border-radius: 5px;
+    color: white;
+    padding: 8px;
+    font-size: 120%;
+    margin: 10px 30% 10px 30%;
+}
+
+.posts main {
+    color: var(--corDoTexto);
+    font-size: 105%;
+    font-style: italic;
+    margin-bottom: 2%;
+}
