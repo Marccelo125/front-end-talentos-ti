@@ -1,0 +1,80 @@
+.sobre-o-blog header {
+    font-size: 180%;
+    text-align: center;
+    padding: 10px;
+    color: var(--corPrimaria);
+    margin: 10px 0px 10px 0px;
+}
+
+.sobre-o-blog p {
+    text-align: justify;
+    margin: 0% 10% 0% 10%;
+    font-size: larger;
+    border: 2px var(--corPrimaria) solid;
+    padding: 10px;
+}
+
+.sobre-o-blog figure{
+    border: 2px var(--corPrimaria) solid;
+    border-radius: 10px;
+    min-width: 70vh;
+    max-width: 70vh;
+}
+
+.sobre-o-blog img{
+    display: flex;
+    border-radius: 10px;
+    min-width: 70vh;
+    max-width: 70vh;
+}
+
+.um-pouco-info header {
+    text-align: center;
+    margin: 20px;
+    font-size: 170%;
+    color: var(--corPrimaria);
+}
+
+.texto-pouco-info {
+    border: 2px var(--corPrimaria) solid;
+    border-radius: 10px;
+    margin: 0% 15% 0% 15%;
+    padding: 15px;
+    text-align: justify;
+    font-size: larger;
+}
+
+.texto-pouco-info ul {
+    padding: 20px;
+}
+
+.fundadores header {
+    text-align: center;
+    padding: 20px;
+    color: var(--corDoTextoSecundario);
+    background-color: var(--corPrimaria);
+    margin: 15px 0px 15px 0px;
+}
+
+.fundadores figure {
+    border-radius: 10px;
+    display: inline-flex;
+}
+
+.fundadores figurecaption {
+    font-size: 180%;
+    min-width: 35vh;
+    max-width: 35vh;
+    padding: 15px;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.fundadores img {
+    border-radius: 8px;
+    max-width: 300px;
+    max-height: 40%;
+    text-align: center;
+    border-right: 5px var(--corPrimaria) solid;
+    border-bottom: 5px var(--corPrimaria) solid;
+}

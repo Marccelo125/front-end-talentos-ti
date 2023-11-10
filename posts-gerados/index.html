@@ -4,22 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Posts Gerados em JS</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <script src="./index.js" defer></script>
   </head>
   <!-- aulas: https://codeberg.org/grz/front23n -->
   <body>
     <header class="titulo-blog">
-        <nav>
-            <ul class="lista-navbar">
-                <li class="botao-home"><a href="./index.html">Home</a></li>
-                <li class="botao-sobre"><a href="./about.html">Sobre</a></li>
-            </ul>
-        </nav>
-        <h1>Blog 2023</h1>
+      <h1>Blog 2023</h1>
+      <nav>
+        <ul class="lista-navbar">
+          <li class="botao-home"><a href="./index.html">Home</a></li>
+          <li class="botao-sobre"><a href="./about.html">Sobre</a></li>
+        </ul>
+      </nav>
     </header>
-    <main id="listagemDePosts">
-      <header id="listagemTitulo">Listagem de posts</header>
+    <main>
+      <section>
+        <header><h2>Listagem de Artigos</h2></header>
+      </section>
+      <section class="posts"></section>
+      <section class="fale-conosco">
+        <header>
+          <h2>Fale Conosco</h2>
+        </header>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            quis rem voluptatem iure doloribus harum est ea quo sit, iusto nulla
+            corporis aspernatur deserunt quas suscipit deleniti maiores
+            reiciendis quod.
+          </p>
+          <p id="botao-clique-aqui"><a href="#" id="botao-clique-aqui">Clique aqui..</a></p>
+        </article>
+      </section>
     </main>
+    <footer>
+      @Blog 23 -
+      <a href="LICENSE" target="_blank">Licença </a>
+      <a
+        href="https://codeberg.org/grz/front23n/src/branch/main/proj1-Site-tipo-blog.md"
+        target="_blank"
+        >Material Base</a
+      >
+    </footer>
   </body>
 </html>
