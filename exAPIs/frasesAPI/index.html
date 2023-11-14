@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frases Famosas</title>
+  </head>
+  <main>
+    <h1>Frases Famosas</h1>
+    <ul id="infoFrase"></ul>
+  </main>
+  <body>
+    <script>
+      async function consultaFrase() {
+        // # LEMBRAR do await e do fetch para resposta e .json()
+        const resposta = await fetch(`https://type.fit/api/quotes`);
+        const arrayFrases = await resposta.json();
+
+        // // Mostrar todas as frases da API
+        // const infoFrase = document.querySelector("#infoFrase");
+        // for (frase of arrayFrases) {
+        //   const frases = document.createElement("li");
+        //   frases.innerHTML = `
+        //     <li>${frase.text}</li>
+        //     <li>${frase.author}</li>
+        //     <hr>`;
+
+        //   infoFrase.appendChild(frases);
+        // }
+
+        // Randomizar uma frase da API
+        const infoFrase = document.querySelector("#infoFrase");
+        const numRandomico = (Math.random() * 10).toFixed(0);
+
+        infoFrase.innerHTML = `
+        <li>${arrayFrases[numRandomico].text}</li>
+        <li>${arrayFrases[numRandomico].author}</li>
+        <hr>`;
+      }
+    </script>
+  </body>
+</html>
