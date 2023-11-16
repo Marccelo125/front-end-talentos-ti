@@ -4,18 +4,20 @@
     "data": "2023/10/17",
     "horario": "12:00",
     "autor": "Leandro Silva de Oliveira",
-    "resumo": "Resumo deste post acima",
+    "resumo": "Rising technology is of course one obvious reason, but technology also creates space for new innovations. Computers weren’t invented just for GIT.",
     "imagem": "https://picsum.photos/300/200",
-    "link": "./posts/20231017-primeiro-post.html"
+    "link": "./posts/20231017-primeiro-post.html",
+    "tags": ["#Inovação", " #Tecnologia", " #Financeiro"]
   },
   {
     "titulo": "Titulo para o post - 02",
     "data": "2023/10/17",
     "horario": "15:45",
     "autor": "Jorge Alves Rodriguez",
-    "resumo": "Resumo deste post acima",
+    "resumo": "cooking tip 1: Look at what’s in your pantry and fridge Mix some parsley with olive oil, honey, and lemon uice. Toss to form a tartar sauce.Cooking tip 2: Use what’s in your pantry Peanut butter and",
     "imagem": "https://picsum.photos/seed/picsum/300/200",
-    "link": "./posts/20231017-segundo-post.html"
+    "link": "./posts/20231017-segundo-post.html",
+    "tags": ["#Natureza", " #Caseiro", " #Dicas"]
   },
   {
     "titulo": "Titulo para o post - 03",
@@ -24,15 +26,17 @@
     "autor": "Maria Josefina",
     "resumo": "Resumo deste post acima",
     "imagem": "https://picsum.photos/300/200?grayscale",
-    "link": "./posts/20231018-rascunho-para-amanha.html"
+    "link": "./posts/20231018-rascunho-para-amanha.html",
+    "tags": ["#Bomba", " #Fotografia", " #Fofoca"]
   },
   {
     "titulo": "Titulo para o post - 04",
     "data": "2023/10/18",
     "horario": "17:30",
     "autor": "Paulo Freitas",
-    "resumo": "Resumo deste post acima",
+    "resumo": "Premiere league winners Chelsea faced up to former striker Didier Drogba, fresh from scoring the first ever 100 Premier League goals, in a game which Chelsea won 1-0. Cesc Fàbregas put Chelsea ahead after 27",
     "imagem": "https://picsum.photos/300/200/?blur",
-    "link": "./posts/20231018-tarefa02.html"
+    "link": "./posts/20231018-tarefa02.html",
+    "tags": ["#Esportes", " #Vencedor", " #Futebol"]
   }
 ]

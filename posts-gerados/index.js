@@ -21,6 +21,9 @@ async function leposts() {
     const novoPost = document.createElement("article");
     const verArtigo = document.createElement("p");
 
+    // Aqui ele esta pegando apenas 1 das tags da lista de tags do JSON
+    for (tag of post.tags) {` #${tag}`}
+
     novoPost.innerHTML = `
   <picture><img src="${post.imagem}"/></picture>
   <header><p id="titulo-post">${post.titulo}</p>
@@ -31,6 +34,7 @@ async function leposts() {
     <details>
       <summary>veja um resumo...</summary>
       <p>${post.resumo}</p>
+      <p class="post-tags">${post.tags}</p>
     </details>
       </header>
       `;
