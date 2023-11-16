@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "Titulo para o post - 01",
+    "data": "2023/10/17",
+    "horario": "12:00",
+    "autor": "Leandro Silva de Oliveira",
+    "resumo": "Resumo deste post acima",
+    "imagem": "https://picsum.photos/300/200",
+    "link": "./posts/20231017-primeiro-post.html"
+  },
+  {
+    "titulo": "Titulo para o post - 02",
+    "data": "2023/10/17",
+    "horario": "15:45",
+    "autor": "Jorge Alves Rodriguez",
+    "resumo": "Resumo deste post acima",
+    "imagem": "https://picsum.photos/seed/picsum/300/200",
+    "link": "./posts/20231017-segundo-post.html"
+  },
+  {
+    "titulo": "Titulo para o post - 03",
+    "data": "2023/10/18",
+    "horario": "21:00",
+    "autor": "Maria Josefina",
+    "resumo": "Resumo deste post acima",
+    "imagem": "https://picsum.photos/300/200?grayscale",
+    "link": "./posts/20231018-rascunho-para-amanha.html"
+  },
+  {
+    "titulo": "Titulo para o post - 04",
+    "data": "2023/10/18",
+    "horario": "17:30",
+    "autor": "Paulo Freitas",
+    "resumo": "Resumo deste post acima",
+    "imagem": "https://picsum.photos/300/200/?blur",
+    "link": "./posts/20231018-tarefa02.html"
+  }
+]
