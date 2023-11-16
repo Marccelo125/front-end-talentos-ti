@@ -4,6 +4,8 @@
     --corSecundaria: rgb(117, 117, 255);
     --corDoTextoPrimario: rgb(26, 26, 26);
     --corDoTextoSecundario: rgb(245, 245, 245);
+    --corCardsPosts: rgb(240, 240, 240);
+    --corSelecaoCards: rgb(164, 175, 235);
   }
 
 * {
@@ -45,7 +47,7 @@ header {
     text-align: justify;
 }
 
-.titulo-post {
+#titulo-post {
     text-align: left;
     font-size: larger;
 }
@@ -80,15 +82,23 @@ main {
 .posts article {
     padding: 15px;
     margin-right: 10px;
-    background-color: rgba(226, 226, 226, 0.555);
-    border: 2px rgb(228, 228, 228) solid;
+    background-color: var(--corCardsPosts);
     border-radius: 20px;
+    transition: all 0.35s;
 }
 
 .posts header {
     padding-left: 10px;
 }
 
+.posts article:hover {
+    background: rgb(245, 245, 245);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.data-horario {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .botao-artigo a {
     display: flex;
@@ -114,18 +124,26 @@ main {
     background-color: var(--corSecundaria);
 }
 
+#fale-conosco-article {
+    display: block;
+}
+
+#tx-fale-conosco {
+    margin: 0 12% 5% 12%;
+}
 
 #botao-clique-aqui {
     margin-top: 5%;
     text-align: center;
     color: whitesmoke;
+    max-width: 100%;
 }
 
 #botao-clique-aqui a {
     border-radius: 5px;
     border: 1px var(--corPrimaria);
     background-color: var(--corPrimaria);
-    padding: 10px 39% 10px 40.03%;
+    padding: 2% 30% 2% 30%;
     text-decoration: none;
     color: var(--corDoTextoSecundario);
     transition: all 0.2s;
