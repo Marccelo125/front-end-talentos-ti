@@ -1,0 +1,55 @@
+:root {
+    /* Tons verdes */
+    --main-green: rgb(36, 127, 84);
+    --second-green: rgb(80, 168, 110);
+    --berylline-green: rgb(148, 210, 155);
+    --light-green: rgb(221, 245, 195);
+
+    /* Marrons */
+    --light-brown: rgb(255, 240, 201);
+    --berylline-brown: rgb(248, 221, 168);
+    --second-brown: rgb(243, 192, 120);
+    --main-brown: rgb(197, 134, 75);
+
+    /* Outros tons */
+    --grey: rgb(208, 208, 208);
+    --white-grey: rgb(221, 221, 221);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.navbar-logo {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    margin: 150px;
+    font-size: 250%;
+}
