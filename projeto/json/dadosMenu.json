@@ -1,0 +1,46 @@
+[
+  {
+    "id": "Cappucino",
+    "features":
+      {
+        "type": "hot",
+        "origin": "kenya",
+        "organic": "yes",
+        "roast": "dark",
+        "price": "20"
+      }
+  },
+  {
+    "id": "Cold brew",
+    "features":
+      {
+        "type": "cold",
+        "origin": "brazil",
+        "organic": "yes",
+        "roast": "light",
+        "price": "20"
+      }
+  },
+  {
+    "id": "Iced mocha",
+    "features": 
+      {
+        "type": "cold",
+        "origin": "ethiopia",
+        "organic": "no",
+        "roast": "light",
+        "price": "20"
+      }
+  },
+  {
+    "id": "Latte",
+    "features":
+      {
+        "type": "hot",
+        "origin": "brazil",
+        "organic": "no",
+        "roast": "dark",
+        "price": "20"
+      }
+  }
+]
