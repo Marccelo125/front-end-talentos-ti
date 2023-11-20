@@ -12,8 +12,8 @@
     --main-brown: rgb(197, 134, 75);
 
     /* Outros tons */
-    --grey: rgb(208, 208, 208);
-    --white-grey: rgb(221, 221, 221);
+    --grey: rgb(240, 240, 240);
+    --white-grey: rgb(245, 245, 245);
 }
 
 * {
@@ -26,6 +26,10 @@ nav {
     justify-content: flex-end;
     align-items: center;
     padding: 10px 50px;
+}
+
+main {
+    background-color: var(--grey);
 }
 
 .navbar-logo {
@@ -46,10 +50,91 @@ nav {
 }
 
 .navbar a {
+    color: black;
+    font-size: 105%;
+    color: #000;
+    position: relative;
     text-decoration: none;
 }
 
-.cabecalho {
-    margin: 150px;
+.navbar a::before {
+    background: var(--berylline-green);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.navbar a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.img-header {
+    display: flex;
+    max-width: 225vh;
+    max-height: 90vh;
+}
+
+.img-header img {
+    height: 80vh;
+    width: 225vh;
+}
+
+.tx-cabecalho {
+    margin: 16rem 10rem 1rem 5rem;
     font-size: 250%;
+}
+
+.page-roll {
+    background-color: var(--berylline-green);
+}
+
+.tx-page-roll {
+    padding: 2rem;
+    text-align: center;
+    font-size: large;
+    font-style: oblique;
+}
+
+.header-newsletter {
+    text-align: center;
+    font-size: 250%;
+    margin: 2rem 30vh;
+    border-bottom: 2px var(--second-green) solid;
+}
+
+.newsletter {
+    display: flex;
+    margin: 5vh 55vh;
+}
+
+.newsletter p {
+    padding: 2rem;
+    margin: 0.2rem;
+    text-align: justify;
+    font-size: 150%;
+}
+
+.newsletter img {
+    width: 45vh;
+    height: 30vh;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--main-green);
+    padding: 1.2rem;
+}
+footer a {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--white-grey);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: overline;
 }
