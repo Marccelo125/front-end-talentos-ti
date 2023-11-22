@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 
 .sell-section {
     background-color: var(--colorNeutralWarm);
 }
 
 .menu-title h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: "Work Sans", sans-serif;
     text-align: center;
     color: rgb(31, 31, 31);
     font-size: 250%;
@@ -18,31 +18,45 @@
     justify-content: center;
     margin: 2%;
 }
+.produtos {
+    display: grid;
+    margin: 2% 0;
+    grid-template-columns: 30% 30% 30%;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 0.5%;
+    justify-content: center;
+}
 
 .coffee-board {
-    justify-content: center;
-    margin: 0 15% 2% 15%;
-    padding: 2%;
-    border-radius: 10px;
+    padding: 5%;
+    margin: 1% 10%;
+    
+    border-radius: 15px;
     border: 2px var(--shop-menu-color) solid;
     background-color: var(--shop-menu-color);
+    text-align: center;
 }
 
 .coffee-board img {
     border-radius: 12px;
+    max-width: 100%;
 }
 
 .coffee-board button {
     margin-top: 2%;
-    padding: 1% 10%;
+    padding: 1% 25%;
 }
 
 .coffee-title {
+    text-align: left;
+    margin: 2% 0 2% 0;
     color: black;
     font-size: 200%;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
-    Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
+        sans-serif;
 }
 
 .coffee-description {
+    display: flex;
+    justify-content: space-between;
 }

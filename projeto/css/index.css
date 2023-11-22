@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&family=Montserrat&family=Nunito+Sans:opsz@6..12&family=Open+Sans&family=Oswald&family=Prompt&family=Raleway&family=Roboto&family=Work+Sans&display=swap');
+
 :root {
     /* Tons verdes */
     --main-green: rgb(36, 127, 84);
@@ -14,7 +16,7 @@
     /* Outros tons */
     --grey: rgb(240, 240, 240);
     --white-grey: rgb(245, 245, 245);
-    --shop-menu-color: #FFFFFF;
+    --shop-menu-color: #ffffff;
 
     /* Cores STARBUCKS */
     --colorGreenStarbucks: #006241;
@@ -38,11 +40,16 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 50px;
+    padding: 0.5% 1.5%;
 }
 
 main {
     background-color: var(--grey);
+}
+
+strong {
+    color: var(--colorGreenStarbucks);
+    font-size: 115%;
 }
 
 .navbar-logo {
@@ -88,13 +95,13 @@ main {
 
 .img-header {
     display: flex;
-    max-width: 210%;
-    max-height: 100%;
 }
 
 .img-header img {
-    max-height: 100%;
-    max-width: 210%;
+    max-height: 300%;
+    max-width: 300%;
+    min-width: 65%;
+    min-height: 65%;
     margin-left: 14%;
 }
 
@@ -115,6 +122,7 @@ main {
 .tx-page-roll {
     padding: 2rem;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
     font-size: large;
     font-style: oblique;
 }
@@ -122,42 +130,51 @@ main {
 .header-newsletter {
     text-align: center;
     font-size: 250%;
-    margin: 2rem 30vh;
-    border-bottom: 2px var(--second-green) solid;
+    margin: 3% 20%;
+    border-bottom: 3px var(--second-green) solid;
+    font-family: 'Merriweather', serif;
 }
 
 .newsletter {
-    display: flex;
-    margin: 5% 27%;
+    margin: 0% 27%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .newsletter p {
-    padding: 2%;
-    margin: 0.2%;
-    text-align: justify;
-    font-size: 150%;
+    background-color: var(--colorGreenLight);
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 10%;
+    text-align: left;
+    font-size: 110%;
 }
 
 .newsletter img {
-    width: 45vh;
-    height: 30vh;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #about-header {
-    background-color: var(--colorGreenLight);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--colorHouseGreen);
+    color: var(--colorNeutralCool);
+    font-family: 'Prompt', sans-serif;
     padding: 1%;
     text-align: center;
-    font-size: 250%;
-    margin: 2% 0;
+    font-size: 220%;
+    margin: 2% 27%;
 }
 
 .about-us {
-    margin: 0 25% 0 25%;
+    margin: 0 27%;
 }
 
 .tx-about-us {
+    background-color: var(--colorGreenLight);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: medium;
+    padding: 5%;
     margin-bottom: 2rem;
+    text-align: justify;
 }
 
 .image-bottom {
