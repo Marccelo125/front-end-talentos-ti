@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+.sell-section {
+    background-color: var(--colorNeutralWarm);
+}
+
+.menu-title h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: rgb(31, 31, 31);
+    font-size: 250%;
+    margin: 0 30%;
+    border-bottom: 4px var(--colorGreenAccent) solid;
+}
+
+.produtos {
+    justify-content: center;
+    margin: 2%;
+}
+
+.coffee-board {
+    justify-content: center;
+    margin: 0 15% 2% 15%;
+    padding: 2%;
+    border-radius: 10px;
+    border: 2px var(--shop-menu-color) solid;
+    background-color: var(--shop-menu-color);
+}
+
+.coffee-board img {
+    border-radius: 12px;
+}
+
+.coffee-board button {
+    margin-top: 2%;
+    padding: 1% 10%;
+}
+
+.coffee-title {
+    color: black;
+    font-size: 200%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.coffee-description {
+}

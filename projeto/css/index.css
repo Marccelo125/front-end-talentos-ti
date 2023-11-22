@@ -14,6 +14,19 @@
     /* Outros tons */
     --grey: rgb(240, 240, 240);
     --white-grey: rgb(245, 245, 245);
+    --shop-menu-color: #FFFFFF;
+
+    /* Cores STARBUCKS */
+    --colorGreenStarbucks: #006241;
+    --colorGreenAccent: #00754a;
+    --colorGreenLight: #d4e9e2;
+    --colorHouseGreen: #1e3932;
+    --colorGold: #cba258;
+    --colorGoldLight: #dfc49d;
+    --colorGoldLightest: #faf6ee;
+    --colorNeutralCool: #f9f9f9;
+    --colorNeutralWarm: #f2f0eb;
+    --colorCeramic: #edebe9;
 }
 
 * {
@@ -57,7 +70,7 @@ main {
     text-decoration: none;
 }
 
-.navbar a::before {
+.navbar-list a::before {
     background: var(--berylline-green);
     content: "";
     inset: 0;
@@ -75,22 +88,28 @@ main {
 
 .img-header {
     display: flex;
-    max-width: 225vh;
-    max-height: 90vh;
+    max-width: 210%;
+    max-height: 100%;
 }
 
 .img-header img {
-    height: 80vh;
-    width: 225vh;
+    max-height: 100%;
+    max-width: 210%;
+    margin-left: 14%;
 }
 
 .tx-cabecalho {
-    margin: 16rem 10rem 1rem 5rem;
-    font-size: 250%;
+    margin: 13% 5% 1% 5%;
+    font-size: 300%;
+}
+
+.tx-cabecalho p {
+    width: 250%;
 }
 
 .page-roll {
-    background-color: var(--berylline-green);
+    color: var(--colorCeramic);
+    background-color: var(--colorGreenStarbucks);
 }
 
 .tx-page-roll {
@@ -109,7 +128,7 @@ main {
 
 .newsletter {
     display: flex;
-    margin: 5vh 55vh;
+    margin: 5% 27%;
 }
 
 .newsletter p {
@@ -124,6 +143,33 @@ main {
     height: 30vh;
 }
 
+.about-us {
+    margin: 0 25% 0 25%;
+}
+
+.about-us h1 {
+    text-align: center;
+    font-size: 250%;
+    margin: 2rem 30%;
+    border-bottom: 2px var(--second-green) solid;
+}
+
+.tx-about-us {
+    margin-bottom: 2rem;
+}
+
+.image-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.image-bottom img {
+    width: 48vh;
+    height: 30vh;
+    margin-bottom: 2rem;
+    margin-right: 15px;
+}
+
 footer {
     text-align: center;
     background-color: var(--main-green);
@@ -136,5 +182,5 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: overline;
+    text-decoration: underline;
 }
