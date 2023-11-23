@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&display=swap');
 
 .sell-section {
     background-color: var(--colorNeutralWarm);
 }
 
 .menu-title h1 {
-    font-family: "Work Sans", sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
+    sans-serif;
     text-align: center;
-    color: rgb(31, 31, 31);
-    font-size: 250%;
-    margin: 0 30%;
-    border-bottom: 4px var(--colorGreenAccent) solid;
+    color: var(--colorGreenStarbucks);
+    font-size: 350%;
+    padding-top: 2%;
+    margin: 0 36%;
+    border-bottom: 4px rgb(40, 40, 40) solid;
 }
 
 .produtos {
@@ -28,9 +31,7 @@
 }
 
 .coffee-board {
-    padding: 3%;
     margin: 1% 10%;
-    
     border-radius: 15px;
     border: 2px var(--shop-menu-color) solid;
     background-color: var(--shop-menu-color);
@@ -39,43 +40,50 @@
 
 .coffee-board img {
     border-radius: 12px;
+    width: 50vh;
+    height: 30vh;
     max-width: 100%;
 }
 
 .coffee-board button {
-    margin-top: 2%;
-    padding: 1% 25%;
+    margin: 5% 2% 3% 2%;
+    padding: 1vh 31%;
 }
 
 .coffee-title {
-    text-align: left;
+    text-align: center;
     margin: 2% 0 2% 0;
-    color: black;
+    color: var(--colorGreenStarbucks);
     font-size: 200%;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
-        sans-serif;
+    sans-serif;
+}
+
+.coffee-price {
+    color: var(--colorGreenStarbucks);
+    font-size: 85%;
 }
 
 .coffee-description {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
 }
 
 button {
-    background-color: #04AA6D; /* Green */
-    border: 2px solid #04AA6D;
+    background-color: var(--colorGreenAccent);
+    border: 1px solid var(--colorGreenAccent);
     border-radius: 5px;
     color: white;
-    padding: 20px 32px;
     text-align: center;
     text-decoration: none;
-    font-size: 92%;
+    font-size: 100%;
     transition: all 150ms;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: white;
+    background-color: var(--colorGreenLight);
     color: var(--colorGreenAccent);
-    border: 2px solid #04AA6D;
+    border: 1px solid var(--colorGreenAccent);
 }
