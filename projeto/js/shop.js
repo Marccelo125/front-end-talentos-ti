@@ -1,28 +1,27 @@
-lerCafes()
-async function lerCafes() {
+lercoffees()
+async function lercoffees() {
     const resposta = await fetch("./json/dadosShop.json")
     const dadosMenu = await resposta.json()
     
     
-    for (cafe of dadosMenu) {
+    for (coffee of dadosMenu) {
         const menu = document.querySelector(".produtos")
-        const itemCafe = document.createElement("article")
-        const descricaoCafe = document.createElement("p")
+        const itemcoffee = document.createElement("article")
+        const descricaocoffee = document.createElement("p")
         
-        descricaoCafe.innerHTML = `
+        descricaocoffee.innerHTML = `
         <article class="coffee-board">
-        <img src="https://insanelygoodrecipes.com/wp-content/uploads/2020/07/Cup-Of-Creamy-Coffee-500x375.png" alt=""\>
-        <h1 class="coffee-title">${cafe.id}</h1>
+        <img src='${coffee.img}' alt="Imagem do café ${coffee.id}"\>
+        <h1 class="coffee-title">${coffee.id} - <strong class="coffee-price">R$${coffee.features.price}</strong></h1>
         <article class="coffee-description">
-        <p>Type: ${cafe.features.type}</p>
-        <p>Organic: ${cafe.features.organic}</p>
-        <p>Origin: ${cafe.features.origin}</p>
-        <p>Roast: ${cafe.features.roast}</p>
-        <p>Price: ${cafe.features.price}</p>
+        <p>Type: ${coffee.features.type}</p>
+        <p>Organic: ${coffee.features.organic}</p>
+        <p>Origin: ${coffee.features.origin}</p>
+        <p>Roast: ${coffee.features.roast}</p>
         </article>
         <button>Adicionar ao carrinho</button>
         `
-        menu.appendChild(itemCafe)
-        itemCafe.appendChild(descricaoCafe)
+        menu.appendChild(itemcoffee)
+        itemcoffee.appendChild(descricaocoffee)
     }
 }
