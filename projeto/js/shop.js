@@ -19,7 +19,7 @@ async function lercoffees() {
         <p>Origin: ${coffee.features.origin}</p>
         <p>Roast: ${coffee.features.roast}</p>
         </article>
-        <button>Adicionar ao carrinho</button>
+        <button>Add to cart</button>
         `
         menu.appendChild(itemcoffee)
         itemcoffee.appendChild(descricaocoffee)
