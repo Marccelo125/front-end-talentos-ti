@@ -3,40 +3,49 @@
 
 <img src="https://cdn.acodez.in/wp-content/uploads/2018/03/13-programming-languages-expected-to-change-the-future-of-coding-banner.png" width="1000"></img> 
 
-> [!NOTE]
-> O curso completo conta com 180 horas divididos em 70h de JavaScript + 20h de SoftSkills.
-> a segunda etapa do curso de duvide em 2 módulos, front e backend
+> [!IMPORTANT]
+> Este repositório contém todos os meus exercícios e atividades realizadas durante o módulo `Front end do 3000 Talentos TI.`</br>
+
+> [!Tip]
+> `O curso completo` conta com `180 horas` divididos em 70h de JavaScript + 20h de SoftSkills.</br>
+> A segunda etapa do curso de duvide em 2 módulos, front e backend.
+> `Estou na formação de Front end!`
 
 # Módulos estudados
 | Nome        | Horas  | Módulos   |
-| ----------- | ------ | --------- |
-| JavaScript  | 70h    | [Módulo 01](https://github.com/Marccelo125/prj-final-m1-talentos-ti) |
-| SoftSkills  | 20h    | [Módulo 01](https://github.com/Marccelo125/prj-final-m1-talentos-ti) |
-| FrontEnd    | 90h    | [Módulo 02](https://github.com/Marccelo125/front-end-talentos-ti) |
+| :----------- | :------ | :--------- |
+| `JavaScript`  | 70h    | [Módulo 01](https://github.com/Marccelo125/prj-final-m1-talentos-ti) |
+| `SoftSkills`  | 20h    | [Módulo 01](https://github.com/Marccelo125/prj-final-m1-talentos-ti) |
+| `FrontEnd`    | 90h    | [Módulo 02](https://github.com/Marccelo125/front-end-talentos-ti) |
 | - HTML5     | ***    | [Módulo 02](https://github.com/Marccelo125/front-end-talentos-ti) |
 | - CSS3      | ***    | [Módulo 02](https://github.com/Marccelo125/front-end-talentos-ti) |
 | - JavaScript| ***    | [Módulo 02](https://github.com/Marccelo125/front-end-talentos-ti) |
 
-<details>
-<summary>Lista de Conteúdos </summary>
+## · Lista de Conteúdos
 
 ### Linguagens Estudadas
-##### Última Atualização: 11/10/23
+##### Última Atualização: 23/11/2023
 - HTML5
     - Tags
-    - Semantica
+    - Semântica
     - Estrutura HTML
     - Formatação de Textos
+    - 
 - CSS
+    - APIs de Estilização
+    - Utilização de Grid
+    - Animações Básicas
+    - Estilagem padronizada
 - JavaScript
     - Funções
     - Switch Case
     - Estruturas de Repetições
     - Listas e Organização de códigos
     - Requerimento e Adição de dados
+    - Requerimento de dados de APIs
 
 E como sempre, começamos do básico, você pode checar mais sobre no meu repositório:</br>
-[Conteúdos de Estudo do Módulo 01](https://github.com/Marccelo125/prj-final-m1-talentos-ti) </br>
+[Projeto Final do Módulo 01](https://github.com/Marccelo125/prj-final-m1-talentos-ti) </br>
 [Conteúdos de Estudo do Módulo 02](https://github.com/Marccelo125/front-end-talentos-ti)
 
 ```JS
@@ -49,4 +58,3 @@ function boasVindas() {
 boasVindas()
 console.log("Hello World")
 ```
-</details>
