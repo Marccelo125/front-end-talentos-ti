@@ -102,11 +102,11 @@ strong {
     max-width: 300%;
     min-width: 65%;
     min-height: 65%;
-    margin-left: 14%;
+    margin-left: 16%;
 }
 
 .tx-cabecalho {
-    margin: 13% 5% 1% 5%;
+    margin: 13% 5% 1% 4%;
     font-size: 300%;
 }
 
@@ -143,6 +143,7 @@ strong {
 
 .newsletter p {
     background-color: var(--colorGreenLight);
+    color: var(--colorHouseGreen);
     font-family: 'Nunito Sans', sans-serif;
     padding: 10%;
     text-align: left;

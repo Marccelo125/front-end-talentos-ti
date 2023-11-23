@@ -23,12 +23,12 @@
     margin: 2% 0;
     grid-template-columns: 30% 30% 30%;
     grid-auto-rows: minmax(100px, auto);
-    gap: 0.5%;
+    gap: 0.2%;
     justify-content: center;
 }
 
 .coffee-board {
-    padding: 5%;
+    padding: 3%;
     margin: 1% 10%;
     
     border-radius: 15px;
@@ -59,4 +59,23 @@
 .coffee-description {
     display: flex;
     justify-content: space-between;
+}
+
+button {
+    background-color: #04AA6D; /* Green */
+    border: 2px solid #04AA6D;
+    border-radius: 5px;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 92%;
+    transition: all 150ms;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--colorGreenAccent);
+    border: 2px solid #04AA6D;
 }
