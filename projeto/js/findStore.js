@@ -1,18 +1,18 @@
-async function acharStarbucks() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(position => {
-            const mainSection = document.querySelector("main")
-            const visualMap = document.createElement("iframe")
+async function getLocations() {
+    navigator.geolocation.getCurrentPosition(position => {
+        const { latitude, longitude } = position.coords;
+        // Show a map centered at latitude / longitude.
 
-            console.log(`Latitude: ${position.coords.latitude}`);
-            console.log(`Longitude: ${position.coords.longitude}`);
+        let map = L.map('map').setView([latitude, longitude], 16);
+        
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        
+        L.marker([latitude, longitude]).addTo(map)
+            .bindPopup(`You're right Here!`)
+            .openPopup();
+      });
 
-            visualMap.innerHTML = `<iframe></iframe>`
-            visualMap.src = `https://www.openstreetmap.org/#map=6/-12.490/-65.413`
-
-            mainSection.appendChild(visualMap)
-        })
-    }
 }
-
-acharStarbucks()
+getLocations()
